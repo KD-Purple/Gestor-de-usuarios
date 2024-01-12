@@ -1,0 +1,36 @@
+.card {
+    max-width: 25rem;
+    padding: 0;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  #pills-tab a.active {
+    border-bottom: 2px solid #F1A631;
+  }
+  .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    color: #fff;
+    background-color: #F1A631;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600;
+  }
+  
+  .nav-pills .nav-link.active {
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600;
+  }
+  
+  .tab-content {
+    padding-bottom: 1.3rem;
+  }
+  
+  .form-control {
+    background-color: rgb(241, 243, 247);
+    border: none;
+  }

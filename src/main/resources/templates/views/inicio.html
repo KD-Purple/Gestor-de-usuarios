@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Usuario UABC</title>
+    <link rel="shortcut icon" href="/img/Logo_UABC.png" type="image/png">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   <div class="area"></div>
+   <nav th:replace="components/sidebar :: _sidebar"></nav>
+   <div th:replace="components/header :: header"></div>
+</body>
+<script>
+   $(document).ready(function() {
+       // Manejar clic en los enlaces de la barra lateral
+       $('.has-subnav').click(function() {
+           // Quitar la clase 'active' de todos los enlaces
+           $('.has-subnav').removeClass('active');
+           // Agregar la clase 'active' al enlace seleccionado
+           $(this).addClass('active');
+       });
+   });
+</script>
+</html>
